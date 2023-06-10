@@ -23,7 +23,7 @@ export const MainContent: FC<MainContentProps> = ({ isOpen, setIsOpen }) => {
 				</button>
 
 				{isOpen && (
-					<AnimatedEntrance delay={250} duration={450}>
+					<AnimatedEntrance delay={350} duration={450}>
 						<div css={headshotContainerCss} />
 					</AnimatedEntrance>
 				)}
@@ -46,7 +46,7 @@ export const MainContent: FC<MainContentProps> = ({ isOpen, setIsOpen }) => {
 			</div>
 
 			{isOpen && (
-				<AnimatedEntrance transition="down" delay={450} duration={550}>
+				<AnimatedEntrance transition="down" delay={450} duration={450}>
 					<div css={contactContainerCss}>
 						<a href="https://github.com/elramus" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faGithub} />
