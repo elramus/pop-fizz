@@ -104,6 +104,9 @@ const expandedContainerCss = css`
 `
 const blurbCss = css`
 	font-size: 22px;
+	@media (max-width: 768px) {
+		font-size: 18px;
+	}
 `
 const headshotContainerCss = css`
 	position: absolute;
@@ -123,6 +126,11 @@ const headshotContainerCss = css`
 		top: 100%;
 		left: 50%;
 		border-left: 1px solid #eee;
+	}
+	@media (max-width: 768px) {
+		height: 5rem;
+		width: 5rem;
+		top: -10rem;
 	}
 `
 const contactContainerCss = css`

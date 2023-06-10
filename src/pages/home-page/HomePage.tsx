@@ -46,7 +46,7 @@ const outerContainerCss = css`
 	grid-template-rows: 1fr auto;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	min-height: 100vh;
 `
 const innerContainerCss = css`
 	position: relative;
