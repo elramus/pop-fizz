@@ -14,15 +14,15 @@ export const globalCss = css`
 	}
 
 	p {
-		line-height: 1.6;
+		letter-spacing: -0.25px;
 	}
 
 	a {
-		color: ${colors.rose};
+		color: ${colors.teal};
 		font-weight: bold;
 		transition: color 0.15s ease-out;
 		&:hover {
-			color: ${shade(0.15, colors.rose)};
+			color: ${shade(0.15, colors.teal)};
 		}
 	}
 `
