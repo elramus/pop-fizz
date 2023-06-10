@@ -5,7 +5,7 @@ import { colors } from "./"
 
 export const globalCss = css`
 	body {
-		font-family: "Inter", sans-serif;
+		font-family: "Source Code Pro", monospace;
 		color: ${colors.text};
 	}
 
