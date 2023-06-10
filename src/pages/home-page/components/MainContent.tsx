@@ -18,7 +18,7 @@ export const MainContent: FC<MainContentProps> = ({ isOpen, setIsOpen }) => {
 	return (
 		<>
 			<div css={[baseContainerCss, isOpen ? expandedContainerCss : undefined]}>
-				<button onClick={() => setIsOpen(false)} css={buttonCss}>
+				<button onClick={() => setIsOpen(false)} css={closeButtonCss}>
 					<FontAwesomeIcon icon={["fal", "times"]} fontSize="1.25rem" />
 				</button>
 
@@ -70,6 +70,7 @@ const baseContainerCss = css`
 	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 	padding: 2.25rem 2.5rem;
 	width: 32rem;
+	max-width: 85vw;
 	border-radius: 30px;
 	transform: scale(0);
 	opacity: 0;
@@ -78,7 +79,7 @@ const baseContainerCss = css`
 	transition-property: transform, opacity;
 	background-color: white;
 `
-const buttonCss = css`
+const closeButtonCss = css`
 	position: absolute;
 	top: 0.5rem;
 	right: 0.5rem;
